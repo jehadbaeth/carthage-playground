@@ -7,14 +7,20 @@ Sandbox for playing with [Carthage](https://github.com/Carthage/Carthage) framew
 Based on the following SO answer: https://stackoverflow.com/a/45391022/584548
 
 ## Instructions
+  
+Edit the `Cartfile.private` file to remove / add Carthage frameworks.  
+(This project includes [Charts](https://github.com/danielgindi/Charts) as an example).
 
-1. In Terminal, execute: 
+After editing the `Cartfile.private` file:
+
+1. In Terminal, execute:
 
 	```sh
 	carthage bootstrap --platform iOS --cache-builds --no-use-binaries
 	```
 
 2. Open `carthage-playground.xcworkspace` 👈🏻
+
 3. Build the project: <kbd>Command ⌘</kbd> + <kbd>B</kbd>
 
 You should now be able to use `carthage.playground` with the copied Carthage frameworks.
