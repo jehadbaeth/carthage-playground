@@ -1,5 +1,7 @@
 //: Playground - noun: a place where people can play
 
+import PlaygroundSupport
+
 import UIKit
 import Charts
 
@@ -13,7 +15,16 @@ let data = BarChartData(dataSets: [dataSet])
 
 //: Chart
 
-let barChart = BarChartView(frame: CGRect(x: 0, y: 0, width: 300, height: 400))
+let barChart = BarChartView(frame: CGRect(x: 0, y: 0, width: 600, height: 800))
 barChart.data = data
 barChart.chartDescription?.text = "Number of Widgets by Type"
 barChart.notifyDataSetChanged()
+
+//: View
+
+let frame = CGRect(x: 0, y: 0, width: 600, height: 800)
+let view = UIView(frame: frame)
+view.addSubview(barChart)
+
+PlaygroundPage.current.liveView = view
+PlaygroundPage.current.needsIndefiniteExecution = true
