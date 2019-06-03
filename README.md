@@ -1,6 +1,6 @@
 # carthage-playground
 
-![Xcode 10.1](https://img.shields.io/badge/Xcode-10.1-blue.svg)
+![Xcode 10.2.1](https://img.shields.io/badge/Xcode-10.2.1-blue.svg)
 
 Sandbox for playing with [Carthage](https://github.com/Carthage/Carthage) frameworks.
 
